@@ -1,0 +1,123 @@
+body {
+  background-color: black;
+  font-family: sans-serif;
+}
+
+h1 {
+  font-size: 0px;
+  background-image: url(../img/MaxiHeading.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 150px;
+  margin-top: 30px;
+}
+
+p {
+  margin: 0px;
+}
+
+.description {
+  color: white;
+  text-align: center;
+  padding: 30px;
+}
+.social{
+  display: flex; /*transforma la caja en una linea*/
+  justify-content: center; /*centrar contenido principal*/
+
+}
+.social > *{
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.card--list {
+  max-width: 65%;
+  margin-left: auto;
+  margin-right: 100px;
+}
+.card {
+  color: black;
+  position: relative;
+  margin-bottom: 70px;
+  margin-top: 70px;
+  
+}
+.shadow {
+  box-shadow: 0px 0px 45px 3px rgba(0,196,255,1);
+}
+
+.card:not(:last-child) {
+  margin-bottom: 0;
+}
+.card--header{
+  color: white;
+  padding: 20px;
+  position: relative;
+}
+.card--header::before {
+  content: "";
+  width: 30px;
+  height: 30px;
+  background-color: currentColor;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(-100%, -50%); /*correr el elemento la mitad del tamaño para arriba y para la izquierda*/
+  clip-path: polygon(0 50%, 100% 100%, 100% 0, 0 50%);
+}
+.card--header__green {
+  background-color: #75FA62;
+  color: #75FA62;
+}
+.card--header__red{
+  background-color: red;
+  color: red;
+}
+.card--header__blue{
+  background-color: blue;
+  color:blue;
+}
+.card--body{
+  /* background-color: rgba(255, 255, 255, .3); */
+  background-color: white;
+  padding: 10px 10px;
+
+}
+.card--title{
+    padding: 0px;
+    margin: 0px;
+  }
+.card--adress{
+  margin: 0px;
+  padding: 0px;
+
+}
+
+.border-top-radius {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.border-bottom-radius {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.card--year {
+  text-shadow: 0px 3px 6px rgba(0, 0, 0, .5);
+  color: white;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+}
+
+.line {
+  background-color: white;
+  width: 20px;
+  height: 98%;
+  margin-left: 120px;
+  position: absolute;
+  margin-top: 100px;
+}
